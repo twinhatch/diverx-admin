@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.chatbox::-webkit-scrollbar {
+  display: none;
+}
+
+.table {
+  border-collapse: inherit !important;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
+
+@font-face {
+  font-family: 'SonsieOne';
+  src: url('/font/Sonsie_One/SonsieOne-Regular.ttf');
+}
+
+.SonsieOne {
+  font-family: 'SonsieOne' !important;
+}
+
+@font-face {
+  font-family: 'MicrosoftSansSerif';
+  src: url('/font/microsoft-sans-serif-cufonfonts/micross.ttf');
+}
+
+.MicrosoftSansSerif {
+  font-family: 'MicrosoftSansSerif' !important;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/font/Poppins/Poppins-Regular.ttf');
+}
+
+.Poppins {
+  font-family: 'Poppins' !important;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src: url('/font/Merriweather_Sans/static/MerriweatherSans-Regular.ttf');
+}
+
+.MerriweatherSans {
+  font-family: 'MerriweatherSans' !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #7066e0 !important;
+  color: #fff;
+  font-size: 1em;
+}
